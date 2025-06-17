@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+         <section id="devotionals">
+         <table>
+          <thead>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pres Meredith</td>
+              <td>Welcome</td>
+              <td>BYU-I</td>
+              <td>2025</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+          </tbody>
+         </table>
+         </section>
+         <section id="submit_form">
+         <form>
+          <h4>Submit your favorite devotional here:</h4>
+          <label for="speaker">Speaker: </label>
+          <input type="text" id="speaker" name="speaker" required>
+          <label for="title">Title: </label>
+          <input type="text" id="title" name="title" required>
+          <label for="location">Location: </label>
+          <input type="text" id="location" name="location" required>
+          <label for="year">Year: </label>
+          <input type="text" id="year" name="year" required>
+          <button type="submit">Submit</button>
+         </form>
+         </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

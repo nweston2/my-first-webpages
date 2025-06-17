@@ -1,0 +1,82 @@
+body {
+    background: ivory;
+    background-image: url("../wwr/images/river_icon.png");
+    background-repeat: repeat;
+}
+
+#wrapper {
+    background: skyblue;
+    width: 900px;
+    margin: auto;
+    border: 3px solid #384852;
+    border-radius: 10px;
+}
+
+header {
+    background: url("../wwr/images/mountains.jpg");
+    background-position: 0 440;
+    padding: 30px;
+}
+
+header img {
+    width: 140px;
+}
+
+header h1 {
+    display: inline;
+    font-size: 3em;
+    float: right;
+}
+
+nav {
+    background: #384856;
+    width: 100%;
+    border: 4px solid #2e7162;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: cornsilk;
+    padding: 10 30px;
+    text-shadow: 4px 4px 2px #384856;
+}
+
+nav a:hover {
+    background: #2e7168;
+}
+
+section {
+    border: 3px solid #384856;
+    background: #e6e1c6;
+    width: 30%;
+    float: left;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin: 10px 15px ;
+    justify-content: space-evenly;
+}
+
+section img {
+    width: 200px;
+}
+
+table {
+    clear: both;
+}
+
+footer form {
+    background: #e6e1c6;
+    width: 150px;
+    padding: 10px;
+    border: 3px dotted #384856;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}

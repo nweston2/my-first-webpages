@@ -1,0 +1,182 @@
+body {
+    background: ivory;
+    background-image: url("../wwr/images/river_icon.png");
+    background-repeat: repeat;
+}
+
+#wrapper {
+    background: skyblue;
+    max-width: 1200px;
+    margin: auto;
+    border: 3px solid #384852;
+    border-radius: 10px;
+    display: grid;
+}
+
+header {
+    background: url("../wwr/images/mountains.jpg");
+    background-position: 0 313;
+    background-size: cover;
+    padding: 30px;
+}
+
+header img {
+    width: 140px;
+}
+
+header h1 {
+    display: inline;
+    font-size: 3em;
+    float: right;
+}
+
+nav {
+    background: #384856;
+    width: 100%;
+    height: 60px;
+    border: 4px solid #2e7162;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: cornsilk;
+    padding: 10 30px;
+    text-shadow: 4px 4px 2px #384856;
+}
+
+nav a:hover {
+    background: #2e7168;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section {
+    border: 3px solid #384856;
+    background: #e6e1c6;
+    padding: 10px 30px;
+    margin: 10px 15px ;
+    justify-content: space-evenly;
+}
+
+section img {
+    width: 100%;
+}
+
+table {
+    clear: both;
+}
+
+.content {
+    grid-column: 1 / 4;
+    padding: 30px;
+}
+
+.table {
+    justify-content: center;
+    background-color: #e6e1c6;
+    padding: 20px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 50px 90% 50px;
+}
+
+.table h3 {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.table table {
+    grid-area: 2/2/3/3;
+}
+
+.table td {
+    padding: 15px;
+}
+
+footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../wwr/images/mountains.jpg");
+    background-position: 0 440;
+    background-size: cover;
+}
+
+footer form {
+    background: rgba(230, 225, 198, 20%);
+    padding: 10px;
+    border: 3px dotted #384856;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    height: 15px;
+    overflow: hidden;
+    transition: height 0.75s ease-out;
+}
+
+footer form:hover {
+    height: 200px;
+    transition: height 0.75s ease-in;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #e6e1c6;
+    font-size: 1.25em;
+}
+
+footer form h3 {
+    grid-column: 1 /3;
+}
+
+footer p {
+    grid-column: 1 / 3;
+    justify-self: center;
+}
+
+
+
+@media (max-width: 745px) {
+    main {
+        display: block;
+    }
+
+    header {
+        padding: 0;
+        text-align: center;
+    }
+
+    header img {
+        position: absolute;
+        top: 50px;
+        left: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        float: none;
+    }
+
+    nav {
+        display: block;
+        height: unset;
+    }
+
+    nav a {
+        width: 100%;
+        justify-content: center;
+        padding: unset;
+        border-bottom: 3px solid #2e7162;
+    }
+}

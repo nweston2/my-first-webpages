@@ -1,0 +1,309 @@
+body {
+    background: #112f15;
+}
+
+#wrapper {
+    background: #BB9457;
+    max-width: 1200px;
+    margin: auto;
+    border: 3px solid #384852;
+    border-radius: 10px;
+    display: grid;
+}
+
+header {
+    background: url("/images/allosaurus_in_forest.jpg");
+    background-position: 0 -45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    height: 170px;
+}
+
+#logo {
+    border-radius: 50%;
+}
+
+header img {
+    width: 140px;
+}
+
+header h1 {
+    display: inline;
+    font-size: 3em;
+    float: right;
+    color: #6F1D1B;
+    text-shadow: -1px -1px 0 #BB9457,
+               1px -1px 0 #BB9457,
+               -1px 1px 0 #BB9457,
+               1px 1px 0 #BB9457;
+}
+
+nav {
+    background: #432818;
+    width: 100%;
+    height: 60px;
+    border: 4px solid #2e7162;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #C6FCA8;
+    padding: 10px 30px;
+}
+
+nav a:hover {
+    background: #2e7168;
+    text-shadow: 4px 4px 2px #384856;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+}
+
+section {
+    border: 3px solid #384856;
+    border-radius: 10px;
+    background: #e6e1c6;
+    padding: 10px 30px;
+    margin: 10px 15px ;
+    justify-content: space-evenly;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+section a:hover {
+    color: #155a1f;
+    text-decoration: underline;
+    cursor: url('/images/raptor_logo_resize.png'), pointer;
+}
+
+section p {
+    background: rgba(111, 29, 27,0.8);
+    box-shadow: 5px 5px 10px #384852;
+    font-size: 2em;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.dino_pic {
+    width: 40%;
+    border-radius: 10px;
+    border: 3px solid #6F1D1B;
+}
+
+
+#ice {
+    grid-area: 1/1/2/3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#ice a {
+    grid-area: 1/3/2/5;
+}
+
+#ice img {
+    grid-area: 1/1/4/4;
+}
+
+#ice p {
+    grid-area: 2/2/3/4;
+    z-index: 1;
+}
+
+#ice ul {
+    grid-area: 2/4/3/5;
+}
+
+
+#wwr {
+    grid-area: 2/2/3/4;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr;
+}
+
+#wwr a {
+    grid-area: 1/1/2/3;
+    justify-self: center;
+}
+
+#wwr img {
+    grid-area: 1/2/4/5;
+    justify-self: right;
+}
+
+#wwr p {
+    grid-area: 2/2/3/4;
+}
+
+
+#about_me {
+    grid-area: 3/1/4/3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#about_me a {
+    grid-area: 1/3/2/5;
+}
+
+#about_me img {
+    grid-area: 1/1/4/4;
+}
+
+#about_me p {
+    grid-area: 2/2/3/4;
+    z-index: 1;
+}
+
+
+table {
+    clear: both;
+}
+
+.content {
+    grid-column: 1 / 4;
+    padding: 30px;
+}
+
+.table {
+    justify-content: center;
+    background-color: #e6e1c6;
+    padding: 20px;
+    margin:  50px 400px;
+}
+
+.table h3 {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.table table {
+    grid-area: 2/2/3/3;
+}
+
+.table td {
+    padding: 15px;
+}
+
+
+#aboutmepage {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+}
+
+#aboutmepage img {
+    width: 100%;
+    border-radius: 10px;
+    grid-area: 1/1/3/3;
+}
+
+#aboutmepage h1 {
+    grid-area: 1/3/2/4;
+    font-size: 3em;
+    padding: 5px 20px;
+    color: #6F1D1B;
+}
+
+#aboutmepage p {
+    grid-area: 2/2/3/4;
+    background: rgba(111, 29, 27,0.8);
+    box-shadow: 5px 5px 10px #384852;
+    font-size: 1.6em;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #432818;
+}
+
+footer form {
+    background: rgba(230, 225, 198, 20%);
+    padding: 10px;
+    border: 3px dotted #384856;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    gap: 10px;
+    height: 14px;
+    overflow: hidden;
+    transition: height 0.75s ease-out;
+}
+
+footer form:hover {
+    height: 200px;
+    transition: height 0.75s ease-in;
+}
+
+#contact {
+    grid-column: 1/3;
+    margin: 3px;
+}
+
+footer ul {
+    list-style-image: url("/images/rex_logo_resize.png");
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #C6FCA8;
+    font-size: 1.25em;
+}
+
+footer p {
+    margin-left: 10px;
+}
+
+
+@media (max-width: 745px) {
+    main {
+        display: block;
+    }
+
+    header {
+        padding: 0;
+        text-align: center;
+    }
+
+    header img {
+        position: absolute;
+        top: 50px;
+        left: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        float: none;
+    }
+
+    nav {
+        display: block;
+        height: unset;
+    }
+
+    nav a {
+        width: 100%;
+        justify-content: center;
+        padding: unset;
+        border-bottom: 3px solid #2e7162;
+    }
+}

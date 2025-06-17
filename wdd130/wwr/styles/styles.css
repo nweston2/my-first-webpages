@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-size: 22px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #1c3a13;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(87, 79, 42, 0.9);
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #84732b;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #1c3a00;
+    color: #ec4e20;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1 / 4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.card-img, .mountains {
+    width: 100%;
+}
+
+.rivers-card {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.camping-card {
+    grid-area: 2 / 5 / 3 / 7;
+}
+
+.rapids-card {
+    grid-area: 2 / 8 / 3 / 10;
+}
+
+#background {
+    height: 725px;
+    background-color: #574f2a;
+    grid-area: 4 / 1 / 9 / 11;
+}
+
+.mountains {
+    grid-area: 5 / 2 / 8 / 7;
+    box-shadow: 5px 5px 10px #17172e;
+}
+
+.msg {
+    background-color: rgba(132, 115, 43, 0.8);
+    line-height: 1.5em;
+    padding: 35px;
+    grid-area: 6 / 6 / 7 / 10;
+    box-shadow: 5px 5px 10px #17172e;
+}
+
+main section {
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.book, .join {
+    background-color: #84732b;
+    color: #1c3a13;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.book:hover, .join:hover {
+    background-color: #574f2a;
+    color: #ec4e20;
+}
+
+.home-title {
+    color: #ec4e20;
+    font-size: 2em;
+    font-family: 'Bangers', 'Brush Script MT';
+    margin-top: 10px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #ec4e20;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #17172e;
+}
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+h2 {
+    margin: 0;
+}
+
+h4 {
+    color: #ec4e20;
+}
+
+.msg h2 {
+    color: #ec4e20;
+    font-family: 'Bangers', 'Brush Script MT';
+}
+
+.msg p {
+    color: #ec4e20;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #1c3a13;
+    color: #84732b;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #84732b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ec4e20;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+    width: 100px;
+}
+
+.icon {
+    padding-top: 10px;
+}
+
+.logo, .icon {
+    width: 80px;
+}
+
+
+@media screen and (max-width: 900px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #ec4e20;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
