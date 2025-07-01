@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: url("/images/allosaurus_in_forest.jpg");
+    background: url("../images/allosaurus_in_forest.jpg");
     background-position: 0 -45px;
     background-size: cover;
     background-repeat: no-repeat;
