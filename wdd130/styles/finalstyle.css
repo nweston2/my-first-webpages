@@ -87,7 +87,7 @@ section a {
 section a:hover {
     color: #155a1f;
     text-decoration: underline;
-    cursor: url('/images/raptor_logo_resize.png'), pointer;
+    cursor: url('../images/raptor_logo_resize.png'), pointer;
 }
 
 section p {
@@ -260,7 +260,7 @@ footer form:hover {
 }
 
 footer ul {
-    list-style-image: url("/images/rex_logo_resize.png");
+    list-style-image: url("../images/rex_logo_resize.png");
 }
 
 footer ul li a {
