@@ -227,6 +227,18 @@ table {
     padding: 10px;
 }
 
+#report {
+    margin: 30px;
+}
+
+#report a {
+    color: black;
+}
+
+#report p {
+    padding: 5px 15px;
+}
+
 
 footer {
     margin-top: 50px;
@@ -260,6 +272,7 @@ footer form:hover {
 
 footer ul {
     list-style-image: url("../images/rex_logo_resize.png");
+    margin: 10px 10px;
 }
 
 footer ul li a {
